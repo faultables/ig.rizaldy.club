@@ -12,8 +12,7 @@ const OverlayContent = ({ overlayContent }) => {
   } else if (overlayContent?.type === MEDIA_TYPE.VIDEOS) {
     return (
       <iframe
-        width="50%"
-        height="50%"
+        className="md:w-6/12 w-full h-1/2"
         allow="fullscreen"
         sandbox="allow-same-origin allow-scripts allow-popups"
         src={overlayContent?.url}
@@ -30,14 +29,14 @@ const Overlay = ({ overlayContent, closeOverlay }) => {
       onClick={closeOverlay}
       className={`${
         isOverlayOpen
-          ? "bg-neutral-800/95 fixed w-screen h-screen left-0 top-0 cursor-pointer"
+          ? "bg-neutral-800/95 fixed w-full h-full left-0 top-0 cursor-pointer"
           : ""
       }`}
     >
       {isOverlayOpen ? (
         <p
           onClick={closeOverlay}
-          className="fixed right-0 bottom-0 m-5 text-white rounded text-sm"
+          className="fixed right-0 bottom-0 md:mx-5 my-5 text-white rounded text-sm text-center md:text-right w-full"
         >
           Click anywhere or press "Escape" to close
         </p>
@@ -45,7 +44,7 @@ const Overlay = ({ overlayContent, closeOverlay }) => {
 
       <div
         className={`flex justify-center items-center ${
-          isOverlayOpen ? "h-screen w-screen" : "h-0 w-0"
+          isOverlayOpen ? "h-full w-full" : "h-0 w-0"
         }`}
       >
         <OverlayContent overlayContent={overlayContent} />

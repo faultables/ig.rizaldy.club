@@ -3,11 +3,15 @@ import Link from "next/link";
 import { YEAR_TO_BUMP } from "../constants";
 
 const Footer = ({ license, links, repo, commitID }) => (
-  <footer className="flex items-center justify-between flex-wrap py-4 text-center mt-10">
-    <div className="w-10/12 md:w-7/12 mx-auto font-semibold">
-      <div className="text-sm mb-10">
+  <footer className="flex py-4 text-center md:mt-10 mt-5">
+    <div className="md:w-7/12 mx-auto font-semibold">
+      <div className="md:text-sm mb-10">
         {links.map(({ url, label }) => (
-          <Link key={url + label} href={url} className="mx-4">
+          <Link
+            key={url + label}
+            href={url}
+            className="md:mx-4 mb-1 md:inline block"
+          >
             {label}
           </Link>
         ))}
