@@ -1,0 +1,40 @@
+{
+    "navbar": {
+        "logotype": "not instagram™",
+        "logo": "https://s3.rizaldy.club/0x0/d43840c5ee4ec66a3bee3c6e2.png"
+    },
+    "profile": {
+        "avatar": "https://s3.rizaldy.club/0x0/IMG_6279.JPG",
+        "username":"faultables",
+        "follow_url": "https://edgy.social/@rizaldy",
+        "message_url": "mailto:rizaldy@duck.com",
+        "display_name": "rizaldy",
+        "about": "SRE, DevOps, and everything in between",
+        "link": "rizaldy.club"
+    },
+    "footer": {
+        "repo": "https://github.com/faultables/ig.rizaldy.club",
+        "links": [
+            {
+                "label": "About",
+                "url": "/static/about"
+            },
+            {
+                "label": "Blog",
+                "url": "https://rizaldy.club"
+            },
+            {
+                "label": "Mastodon",
+                "url": "https://edgy.social/@rizaldy"
+            },
+            {
+                "label": "Bluesky",
+                "url": "https://bsky.app/profile/rizaldy.club"
+            }
+        ],
+        "license": {
+            "name": "CC BY-NC-SA 4.0",
+            "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        }
+    }
+}
