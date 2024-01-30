@@ -1,0 +1,21 @@
+name: deploy
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - run: echo "COMMIT_SHORT_SHA=`git rev-parse --short HEAD`" >> $GITHUB_ENV
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 21
+          cache: "npm"
+      - run: npm ci
+      - run: npm run build
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          cname: ig.rizaldy.club
