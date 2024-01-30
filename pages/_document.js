@@ -1,5 +1,3 @@
-import Script from "next/script";
-
 import { Html, Head, Main, NextScript } from "next/document";
 
 const Document = () => {
@@ -9,12 +7,6 @@ const Document = () => {
       <body>
         <Main />
         <NextScript />
-        {process.env.UMAMI_ENABLED === "true" ? (
-          <Script
-            src={process.env.UMAMI_SCRIPT_URL}
-            data-website-id={process.env.UMAMI_WEBSITE_ID}
-          />
-        ) : null}
       </body>
     </Html>
   );
