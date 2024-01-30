@@ -20,9 +20,6 @@ jobs:
           MINIO_SECRET_KEY: ${{ secrets.MINIO_SECRET_KEY }}
           MINIO_BUCKET: ${{ secrets.MINIO_BUCKET }}
           PEERTUBE_FEED_URL: ${{ secrets.PEERTUBE_FEED_URL }}
-          UMAMI_ENABLED: ${{ env.UMAMI_ENABLED }}
-          UMAMI_SCRIPT_URL: ${{ env.UMAMI_SCRIPT_URL }}
-          UMAMI_WEBSITE_ID: ${{ env.UMAMI_WEBSITE_ID }}
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

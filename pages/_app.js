@@ -15,29 +15,26 @@ const Content = ({ children }) => (
   </div>
 );
 
-const App = ({ Component, pageProps }) => {
-  console.log(process.env.UMAMI_ENABLED);
-  return (
-    <Fragment>
-      <Navbar name={config.navbar.logotype} logo={config.navbar.logo} />
-      <Content>
-        <Component {...pageProps} />
-      </Content>
-      <Footer
-        repo={config.footer.repo}
-        links={config.footer.links}
-        license={config.footer.license}
-        commitID={process.env.COMMIT_SHORT_SHA || "HEAD"}
+const App = ({ Component, pageProps }) => (
+  <Fragment>
+    <Navbar name={config.navbar.logotype} logo={config.navbar.logo} />
+    <Content>
+      <Component {...pageProps} />
+    </Content>
+    <Footer
+      repo={config.footer.repo}
+      links={config.footer.links}
+      license={config.footer.license}
+      commitID={process.env.COMMIT_SHORT_SHA || "HEAD"}
+    />
+    {process.env.UMAMI_ENABLED ? (
+      <Script
+        strategy="beforeInteractive"
+        src={process.env.UMAMI_SCRIPT_URL}
+        data-website-id={process.env.UMAMI_WEBSITE_ID}
       />
-      {process.env.UMAMI_ENABLED ? (
-        <Script
-          strategy="beforeInteractive"
-          src={process.env.UMAMI_SCRIPT_URL}
-          data-website-id={process.env.UMAMI_WEBSITE_ID}
-        />
-      ) : null}
-    </Fragment>
-  );
-};
+    ) : null}
+  </Fragment>
+);
 
 export default App;
