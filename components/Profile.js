@@ -2,9 +2,10 @@ const Profile = ({ profile, totalPosts }) => (
   <div className="flex flex-warp">
     <div className="lg:w-4/12 w-3/12 md:py-10 ml-3 md:ml-0 lg:px-20 md:px-10">
       <img
+        loading="lazy"
         alt={profile.display_name}
         src={profile.avatar}
-        className="w-100 rounded-full mx-auto border border-gray-200 p-1"
+        className="w-100 rounded-full mx-auto border bg-neutral-100 border-gray-200 p-1"
       />
     </div>
     <div className="lg:w-9/12 md:w-10/12 mb-5 md:p-5 ml-5">
