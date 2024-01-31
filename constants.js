@@ -1,4 +1,4 @@
-export const MEDIA_PER_PAGE = 30;
+export const MEDIA_PER_PAGE = 40;
 export const MEDIA_TYPE = {
   PHOTOS: "photos",
   VIDEOS: "videos",
