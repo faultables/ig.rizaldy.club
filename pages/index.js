@@ -74,7 +74,7 @@ export async function getStaticProps() {
   const minioObjects = await new Promise((resolve, reject) => {
     const data = [];
 
-    const stream = mc.listObjectsV2(minioBucket, "", true, "");
+    const stream = mc.listObjectsV2(minioBucket, "photos", true, "");
 
     stream.on("data", (obj) => data.push(obj.name));
     stream.on("error", reject);
