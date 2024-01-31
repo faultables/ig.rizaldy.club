@@ -87,7 +87,7 @@ export async function getStaticProps() {
     id,
     url: `https://${minioEndpoint}/${minioBucket}/${id}`,
     previewPath: `https://${minioEndpoint}/${minioBucket}/${id}`,
-  }));
+  })).sort().reverse();
 
   const getPeertubeFeeds = await fetch(process.env.PEERTUBE_FEED_URL);
   const peertubeFeeds = await getPeertubeFeeds.text();
