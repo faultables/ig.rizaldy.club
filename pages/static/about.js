@@ -69,7 +69,7 @@ const About = () => (
       <p className="mb-6">
         Jika kamu seorang fotografer, kamu bisa mencoba Pixelfed. Kamu juga bisa
         berinteraksi dengan komunitas di jaringan yang sama—selama menggunakan
-        protokol ActivityPun—karena Pixelfed adalah jaringan federasi!
+        protokol ActivityPub—karena Pixelfed adalah jaringan federasi!
       </p>
       <p className="mb-6">
         Bagaimanapun, pilihan ini bukanlah pendekatan yang terbaik. Tapi
