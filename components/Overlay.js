@@ -36,7 +36,7 @@ const Overlay = ({ overlayContent, closeOverlay }) => {
       {isOverlayOpen ? (
         <p
           onClick={closeOverlay}
-          className="fixed right-0 bottom-0 md:mx-5 my-5 text-white rounded text-sm text-center md:text-right w-full"
+          className="fixed right-0 bottom-0 md:mx-5 my-5 text-white rounded text-sm text-center w-full z-30"
         >
           Click anywhere or press "Escape" to close
         </p>
