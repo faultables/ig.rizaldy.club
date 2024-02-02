@@ -13,13 +13,13 @@ const Profile = ({ profile, totalPosts }) => (
         <h2 className="text-2xl font-semibold">{profile.username}</h2>
         <div className="md:ml-4 my-4">
           <a
-            className="rounded-md bg-gray-100 px-5 font-semibold py-2 md:ml-2 text-sm leading-relaxed dark:bg-neutral-800"
+            className="rounded-md bg-gray-100 px-5 font-semibold py-2 md:ml-2 text-sm leading-relaxed dark:bg-neutral-800 hover:opacity-70"
             href={profile.follow_url}
           >
             Follow
           </a>
           <a
-            className="rounded-md bg-gray-100 px-5 font-semibold py-2 ml-2 text-sm leading-relaxed dark:bg-neutral-800"
+            className="rounded-md bg-gray-100 px-5 font-semibold py-2 ml-2 text-sm leading-relaxed dark:bg-neutral-800 hover:opacity-70"
             href={profile.message_url}
           >
             Message
@@ -34,6 +34,7 @@ const Profile = ({ profile, totalPosts }) => (
       <p className="leading-loose font-semibold text-blue-900 dark:text-blue-200">
         <a
           target="_blank"
+          className="hover:underline"
           rel="noopener noreferer"
           href={`https://${profile.link}`}
         >

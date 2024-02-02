@@ -10,12 +10,12 @@ const Footer = ({ license, links, repo, commitID }) => (
           <Link
             key={url + label}
             href={url}
-            className="md:mx-4 mb-1 md:inline block"
+            className="md:mx-4 mb-1 md:inline block hover:opacity-70"
           >
             {label}
           </Link>
         ))}
-        <Link href={repo} className="mx-4">
+        <Link href={repo} className="mx-4 hover:opacity-70">
           Source Code
         </Link>
       </div>
@@ -24,7 +24,7 @@ const Footer = ({ license, links, repo, commitID }) => (
         <p>
           &copy; {YEAR_TO_BUMP}{" "}
           <Link
-            className="text-neutral-600 dark:text-neutral-200"
+            className="text-neutral-600 dark:text-neutral-200 hover:opacity-70"
             target="_blank"
             rel="noopener noreferer"
             href="https://github.com/faultables"
@@ -32,12 +32,12 @@ const Footer = ({ license, links, repo, commitID }) => (
             faultables
           </Link>{" "}
           • All media is licensed under{" "}
-          <Link className="underline" href={license.url}>
+          <Link className="underline hover:opacity-70" href={license.url}>
             {license.name}
           </Link>{" "}
           unless stated otherwise •{" "}
           <Link
-            className="text-neutral-600 dark:text-neutral-200"
+            className="text-neutral-600 dark:text-neutral-200 hover:opacity-70"
             target="_blank"
             rel="noopener noreferer"
             href={`${repo}/commit/${commitID}`}

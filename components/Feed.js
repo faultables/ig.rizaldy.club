@@ -14,6 +14,7 @@ const Feed = ({
           href={url}
           target="_blank"
           rel="noopener noreferer"
+          className="hover:opacity-70"
           onClick={(e) => {
             e.preventDefault();
 

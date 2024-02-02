@@ -29,7 +29,7 @@ const Overlay = ({ overlayContent, closeOverlay }) => {
       onClick={closeOverlay}
       className={`${
         isOverlayOpen
-          ? "bg-neutral-800/95 fixed w-full h-full left-0 top-0 cursor-pointer"
+          ? "bg-neutral-800/95 fixed w-full h-full left-0 top-0 cursor-pointer z-30"
           : ""
       }`}
     >

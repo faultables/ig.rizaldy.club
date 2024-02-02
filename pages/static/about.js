@@ -8,7 +8,7 @@ const About = () => (
         Sebelumnya saya menjalankan <em>instance</em>{" "}
         <a
           href="https://pixelfed.org"
-          className="underline"
+          className="underline hover:opacity-70"
           target="_blank"
           rel="noopener noreferer"
         >
@@ -22,7 +22,7 @@ const About = () => (
         Disamping itu, Pixelfed sangat menjanjikan: menggunakan protokol{" "}
         <a
           href="https://www.w3.org/TR/activitypub/"
-          className="underline"
+          className="underline hover:opacity-70"
           target="_blank"
           rel="noopener noreferer"
         >
@@ -32,7 +32,7 @@ const About = () => (
         paling penting adalah{" "}
         <a
           href="https://github.com/pixelfed/pixelfed"
-          classname="underline"
+          classname="underline hover:opacity-70"
           target="_blank"
           rel="noopener noreferer"
         >
@@ -45,7 +45,7 @@ const About = () => (
         memiliki akun sosial media lainnya di "universe"{" "}
         <a
           href="https://joinmastodon.org"
-          className="underline"
+          className="underline hover:opacity-70"
           target="_blank"
           rel="noopener noreferer"
         >
@@ -76,13 +76,16 @@ const About = () => (
         setidaknya, ini tidak berlebihan, khususnya untuk saat ini.
       </p>
       <br />
-      <a
-        href="https://github.com/faultables"
-        target="_blank"
-        rel="noopener noreferer"
-      >
-        <p className="mb-6">— faultables</p>
-      </a>
+      <p className="mb-6">
+        <a
+          href="https://github.com/faultables"
+          className="hover:opacity-70"
+          target="_blank"
+          rel="noopener noreferer"
+        >
+          — faultables
+        </a>
+      </p>
     </div>
   </div>
 );
