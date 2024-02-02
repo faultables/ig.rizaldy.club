@@ -1,7 +1,7 @@
 const About = () => (
   <div className="p-2">
-    <div className="md:border p-5 md:w-8/12 md:shadow md:rotate-[-0.5deg] mx-auto text-neutral-600">
-      <h2 className="font-bold text-3xl leading-loose mb-2 text-black">
+    <div className="md:border p-5 md:w-8/12 md:shadow md:rotate-[-0.5deg] mx-auto text-neutral-600 dark:text-neutral-200 dark:border-neutral-800">
+      <h2 className="font-bold text-3xl leading-loose mb-2 text-black dark:text-neutral-200">
         Notes from @faultables
       </h2>
       <p className="mb-6">

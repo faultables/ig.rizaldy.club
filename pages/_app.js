@@ -2,8 +2,6 @@ import "../styles/globals.css";
 
 import Script from "next/script";
 
-import { Fragment } from "react";
-
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -16,7 +14,7 @@ const Content = ({ children }) => (
 );
 
 const App = ({ Component, pageProps }) => (
-  <Fragment>
+  <div className='bg-white dark:bg-black dark:text-neutral-200'>
     <Navbar name={config.navbar.logotype} logo={config.navbar.logo} />
     <Content>
       <Component {...pageProps} />
@@ -34,7 +32,7 @@ const App = ({ Component, pageProps }) => (
         data-website-id={process.env.UMAMI_WEBSITE_ID}
       />
     ) : null}
-  </Fragment>
+  </div>
 );
 
 export default App;

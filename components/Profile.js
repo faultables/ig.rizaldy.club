@@ -5,7 +5,7 @@ const Profile = ({ profile, totalPosts }) => (
         loading="lazy"
         alt={profile.display_name}
         src={profile.avatar}
-        className="w-100 rounded-full mx-auto border bg-neutral-100 border-gray-200 p-1"
+        className="w-full rounded-full mx-auto border bg-neutral-100 border-gray-200 p-1 dark:border-neutral-800 dark:bg-black"
       />
     </div>
     <div className="lg:w-9/12 md:w-10/12 mb-5 md:p-5 ml-5">
@@ -13,13 +13,13 @@ const Profile = ({ profile, totalPosts }) => (
         <h2 className="text-2xl font-semibold">{profile.username}</h2>
         <div className="md:ml-4 my-4">
           <a
-            className="rounded-md bg-gray-100 px-5 font-semibold py-2 md:ml-2 text-sm leading-relaxed"
+            className="rounded-md bg-gray-100 px-5 font-semibold py-2 md:ml-2 text-sm leading-relaxed dark:bg-neutral-800"
             href={profile.follow_url}
           >
             Follow
           </a>
           <a
-            className="rounded-md bg-gray-100 px-5 font-semibold py-2 ml-2 text-sm leading-relaxed"
+            className="rounded-md bg-gray-100 px-5 font-semibold py-2 ml-2 text-sm leading-relaxed dark:bg-neutral-800"
             href={profile.message_url}
           >
             Message
@@ -31,7 +31,7 @@ const Profile = ({ profile, totalPosts }) => (
       </div>
       <p className="font-bold mb-1">{profile.display_name}</p>
       <p>{profile.about}</p>
-      <p className="leading-loose font-semibold text-blue-900">
+      <p className="leading-loose font-semibold text-blue-900 dark:text-blue-200">
         <a
           target="_blank"
           rel="noopener noreferer"

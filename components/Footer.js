@@ -24,7 +24,7 @@ const Footer = ({ license, links, repo, commitID }) => (
         <p>
           &copy; {YEAR_TO_BUMP}{" "}
           <Link
-            className="text-neutral-600"
+            className="text-neutral-600 dark:text-neutral-200"
             target="_blank"
             rel="noopener noreferer"
             href="https://github.com/faultables"
@@ -37,7 +37,7 @@ const Footer = ({ license, links, repo, commitID }) => (
           </Link>{" "}
           unless stated otherwise •{" "}
           <Link
-            className="text-neutral-600"
+            className="text-neutral-600 dark:text-neutral-200"
             target="_blank"
             rel="noopener noreferer"
             href={`${repo}/commit/${commitID}`}

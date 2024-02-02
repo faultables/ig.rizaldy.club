@@ -23,7 +23,7 @@ const Feed = ({
             });
           }}
         >
-          <img alt={url} loading="lazy" src={previewPath} className={`aspect-${type} bg-neutral-100`} />
+          <img alt={url} loading="lazy" src={previewPath} className={`aspect-${type} bg-neutral-100 dark:bg-neutral-900`} />
         </a>
       ))}
   </main>
