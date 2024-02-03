@@ -9,12 +9,12 @@ import config from "../config.json";
 
 const Content = ({ children }) => (
   <div className="flex items-center justify-between w-full my-5">
-    <div className="lg:w-7/12 mx-auto">{children}</div>
+    <div className="md:w-11/12 lg:w-7/12 mx-auto">{children}</div>
   </div>
 );
 
 const App = ({ Component, pageProps }) => (
-  <div className='bg-white dark:bg-black dark:text-neutral-200'>
+  <div className='min-h-screen bg-white dark:bg-black dark:text-neutral-200'>
     <Navbar name={config.navbar.logotype} logo={config.navbar.logo} />
     <Content>
       <Component {...pageProps} />
