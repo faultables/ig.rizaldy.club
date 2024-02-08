@@ -36,9 +36,19 @@ const Overlay = ({ overlayContent, closeOverlay }) => {
       {isOverlayOpen ? (
         <p
           onClick={closeOverlay}
-          className="fixed right-0 bottom-0 md:mx-5 my-5 text-white rounded text-sm text-center w-full z-30"
+          className="fixed right-0 bottom-0 md:mx-5 my-5 text-white rounded text-sm text-center w-full z-30 md:bottom-10 px-2 leading-relaxed"
         >
           Click anywhere or press "Escape" to close
+          <span className="px-2">|</span>
+          <a
+            className="underline"
+            target="_blank"
+            rel="noreferer noopener"
+            href={overlayContent?.url}
+          >
+            Click here
+          </a>{" "}
+          to see the raw media
         </p>
       ) : null}
 
